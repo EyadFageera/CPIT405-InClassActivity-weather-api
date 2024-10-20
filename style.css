@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    width: 400px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+.input-container {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.input-container label {
+    margin-right: 10px;
+    font-size: x-large;
+}
+
+.input-container input {
+    border: none;
+    flex-grow: 1;
+    padding: 5px;
+    font-size: 16px;
+    margin-right: 4px;
+    background-color: #f1f1f1;
+}
+
+.input-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    width: 35px;
+    height: 35px; 
+}
+
+button:hover {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+}
+
+.weather-info {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #708090;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather-info p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: white;
+}
+
+
+.weather-info p {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
